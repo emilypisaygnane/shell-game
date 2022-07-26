@@ -1,15 +1,12 @@
 :root {
-    --background: rgb(224, 234, 247);
-    --header-background: white;
-    --footer-background: rgb(243, 242, 242);
+    --background: rgb(248, 246, 246);
+    --header-background: pink;
+    --footer-background: lightblue;
 }
 
-body {
-    height: 100vh;
-    font-family: 'Rubik', san-serif;
-    background: var(--background);
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+html, body {
+    height: 100%;
+    width: 100%
 }
 
 header {
@@ -32,4 +29,29 @@ footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+}
+
+.hiding-places {
+    height: 300px;
+    display: flex;
+}
+
+.hiding_place {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hiding-img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+#reset-button{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }

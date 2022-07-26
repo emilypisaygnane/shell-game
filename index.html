@@ -12,20 +12,39 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/global.css" />
-    <title>Web App</title>
+    <title>Shell Game</title>
 </head>
 
 <body>
     <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <h1>Find The Fairy</h1>
     </header>
-
-    <main>
-
-    </main>
-
-    <footer>&copy;2022 Software Developer</footer>
+<main>
+    <section class="main">
+        <h2>
+            Come Find Me!
+        </h2>
+    <div class="hiding-places">
+            <div id="flower-one" class="hiding-place">
+                <img src="./assets/blue-flower.png" class="hiding-img"/>
+                <button id="button-one">Button</button>
+            </div>
+            <div id="flower=two" class="hiding-place">
+                <img src="./assets/blue-flower.png" class="hiding-img"/>
+                <button id="button-two">Button</button>
+            </div>
+            <div id="flower-three" class="hiding-place">
+                <img src="./assets/blue-flower.png"class="hiding-img"/>
+                <button id="button-three">Button</button>
+            </div>
+        </div>
+        <div>You found me <span id="found">0</span> times</div>
+        <div>and you did not find me <span id="not-found">0</span> times</div>
+        <div>out of <span id="total">0</span> games.</div>
+        <button id="reset-button">Try Again</button>
+    </section>
+</main>
+    <footer>&copy;July 2022 Emily Pisaygnane</footer>
 
     <script type="module" src="app.js"></script>
 </body>
