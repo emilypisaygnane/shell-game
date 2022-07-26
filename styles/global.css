@@ -1,12 +1,9 @@
 :root {
-    --background: rgb(248, 246, 246);
+    --background: white;
     --header-background: pink;
     --footer-background: lightblue;
-}
 
-html, body {
-    height: 100%;
-    width: 100%
+    --gutter: 30px;
 }
 
 header {
@@ -18,22 +15,40 @@ header {
 }
 
 main {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-footer {
-    position: sticky;
-    bottom: 0;
-    padding: 7px 20px;
-    font-size: .8em;
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--footer-background);
+section {
+    background-color: var(--background);
+    width: 1000px;
+    max-width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--gutter);
+    padding-right: var(--gutter) ;
+    padding-bottom: var(--gutter);
+    padding-left: var(--gutter);
+}
+
+h2 {
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    justify-content: center;
+    align-items: center;
 }
 
 .hiding-places {
     height: 300px;
     display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .hiding_place {
@@ -50,8 +65,25 @@ footer {
     margin: auto;
 }
 
-#reset-button{
+.button { 
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+}
+
+#reset-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+footer {
+    position: sticky;
+    padding: 10px 20px;
+    font-size: .8em;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--footer-background);
 }
