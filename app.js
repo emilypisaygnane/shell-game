@@ -1,12 +1,12 @@
 // import functions and grab DOM elements
-const buttonOne = document.getElementById('button-one');
-const buttonTwo = document.getElementById('button-two');
-const buttonThree = document.getElementById('button-three');
-const restButton = document.getElementById('reset-button');
+const pinkButton = document.getElementById('pink-button');
+const blueButton= document.getElementById('blue-button');
+const purpleButton = document.getElementById('purple-button');
+const resetButton = document.getElementById('reset-button');
 
-const oneFlower = document.getElementById('one-flower');
-const twoFlower = document.getElementById('two-flower');
-const threeFlower = document.getElementById('three-flower');
+const pinkFlower = document.getElementById('pink-flower');
+const blueFlower = document.getElementById('blue-flower');
+const purpleFlower = document.getElementById('purple-flower');
 
 const totalEl = document.getElementById('total');
 const notFoundEl = document.getElementById('not-found');
