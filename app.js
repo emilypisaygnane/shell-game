@@ -1,18 +1,18 @@
 // import functions and grab DOM elements
 const buttonOne = document.getElementById('button-one');
-const buttonTwo = document.getElementById('button-one');
-const buttonThree = document.getElementById('button-one');
+const buttonTwo = document.getElementById('button-two');
+const buttonThree = document.getElementById('button-three');
 const restButton = document.getElementById('reset-button');
 
-const flowerOne = document.getElementById('flowerOne-container');
-const flowerTwo = document.getElementById('flowerTwo-container');
-const flowerThree = document.getElementById('flowerThree-container');
+const oneFlower = document.getElementById('one-flower');
+const twoFlower = document.getElementById('two-flower');
+const threeFlower = document.getElementById('three-flower');
 
 const totalEl = document.getElementById('total');
 const notFoundEl = document.getElementById('not-found');
 const foundEl = document.getElementById('found');
 // let state
-const hidingPlaces = ['flower-one', 'flower-two', 'flower-three'];
+const hidingPlaces = ['one-flower', 'two-flower', 'three-flower'];
 
 let foundGuesses = 0;
 let totalGuesses = 0;
@@ -38,7 +38,7 @@ buttonThree.addEventListener('click', () => {
     resetStyles();
     totalGuesses++;
     
-    const correctHidingPlaceEl = document.getElementById(`${correctSpot`}-container`);
+    const correctHidingPlaceEl = document.getElementById(`${correctSpot`}-flower`);
     
     correctHidingPlaceEl.classList.add('fairy');
     if (userGuess === correctSpot) {foundGuesses++;
