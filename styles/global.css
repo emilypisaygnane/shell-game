@@ -4,12 +4,14 @@
     --footer-background: lightblue;
 
     --gutter: 30px;
+    --footer-height: 25px;
 }
 
 header {
     position: sticky;
     top: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: var(--header-background);
 }
@@ -19,6 +21,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: calc(var(--footer-height));
 }
 
 section {
@@ -37,12 +40,24 @@ section {
 h2 {
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 h3{
     justify-content: center;
     align-items: center;
 }
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: var(--footer-height);
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--footer-background);
+}
+
 
 .hiding-places {
     height: 300px;
@@ -60,9 +75,10 @@ h3{
 }
 
 .hiding-img {
-    width: 200px;
-    height: 200px;
-    margin: auto;
+    width: 250px;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    
 }
 
 .button { 
@@ -72,18 +88,9 @@ h3{
     margin: auto;
 }
 
-#reset-button {
+.reset-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
 }
 
-footer {
-    position: sticky;
-    padding: 10px 20px;
-    font-size: .8em;
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--footer-background);
-}
