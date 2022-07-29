@@ -28,7 +28,7 @@ pinkButton.addEventListener('click', () => {
     const hidingSpot = Math.floor(Math.random() * 3);
     const answer = hidingSpots[hidingSpot];
 
-    handleGuess(answer, 'pink');
+    handleGuess(answer, 'pink-flower');
 });
 
 blueButton.addEventListener('click', () => {
@@ -37,7 +37,7 @@ blueButton.addEventListener('click', () => {
     const hidingSpot = Math.floor(Math.random() * 3);
     const answer = hidingSpots[hidingSpot];
 
-    handleGuess(answer, 'blue');
+    handleGuess(answer, 'blue-flower');
 });
 
 purpleButton.addEventListener('click', () => {
@@ -46,10 +46,11 @@ purpleButton.addEventListener('click', () => {
     const hidingSpot = Math.floor(Math.random() * 3);
     const answer = hidingSpots[hidingSpot];
 
-    handleGuess(answer, 'purple');
+    handleGuess(answer, 'purple-flower');
 });
 
 function handleGuess(correctSpot, userGuess) {
+
     correctSpot.src = './assets/silvermist-fairy.png';
 
     if (correctSpot.id === userGuess) {

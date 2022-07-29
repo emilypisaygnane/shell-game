@@ -66,14 +66,6 @@ footer {
     padding-right: 50px;
 }
 
-.hiding_place {
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .hiding-img {
     width: 250px;
     margin: 10px 10px 10px 10px;
@@ -88,9 +80,4 @@ footer {
     margin: auto;
 }
 
-.reset-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
