@@ -3,7 +3,7 @@
     --header-background: pink;
     --footer-background: lightblue;
 
-    --gutter: 30px;
+    --gutter: 20px;
     --footer-height: 25px;
 }
 
@@ -26,7 +26,7 @@ main {
 
 section {
     background-color: var(--background);
-    width: 1000px;
+    width: 500px;
     max-width: 80%;
     flex-direction: column;
     justify-content: center;
@@ -58,21 +58,14 @@ footer {
     background-color: var(--footer-background);
 }
 
-
-.hiding-places {
-    height: 300px;
-    display: flex;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
 .hiding-img {
-    width: 250px;
-    margin: 10px 10px 10px 10px;
+    width: 200px;
     display: flex;
-    
 }
 
+#hiding-places {
+    display: flex;
+}
 .button { 
     display: flex;
     justify-content: center;
